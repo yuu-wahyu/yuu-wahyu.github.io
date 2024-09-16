@@ -1,0 +1,110 @@
+:root{
+    --warna-dasar: #8be896;
+    --navbar:#181b28;
+    --latar:#15161b;
+}
+
+@media (max-width: 600px){
+
+  #besar{
+    display: none;
+  }
+
+  #kecil{
+    display: flex;
+  }
+    .navbar-extra{
+        display: inline-block;
+      }
+    .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        transition: 0.2s;
+        border-left: 1.5px solid white;
+        background-color:var(--latar);
+      }
+    
+      .navbar-nav.active{
+        right: 0;
+      }
+    
+      .navbar-nav a{
+        color: white;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        font-size:1.2rem;
+        border-bottom: 1px solid white;
+      }
+
+      .navbar-nav ul{
+        margin-right:7%;
+        margin-left: 3%;
+      }
+
+      .navbar-nav a:hover{
+        border-bottom: 1px solid black;
+        color: black;
+      }
+
+
+
+
+
+      .page1-layarlebar{
+        display: none;
+      }
+
+      .main-about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .t2{
+        padding-right: 0;
+      }
+
+      .div-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .title{
+        font-size: 2rem;
+      }
+
+      .about{
+        font-size: 2rem;
+      }
+
+      .logo-layarkecil{
+        display: flex;
+      }
+
+      .logo-layarlebar{
+        display: none;
+      }
+      .page1{
+        padding:7rem 7%;
+        color:white;
+        align-items:center;
+        justify-content:center;
+        display:flex;
+        flex-direction: column;
+        text-align:center;
+        gap:0.5rem;
+      }
+
+      .picku{
+        width: 150px;
+      }
+}
